@@ -1,13 +1,14 @@
 import './bootstrap';
 import '../css/app.css';
+import './sass/app.scss';
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import { createRouter, createWebHistory } from 'vue-router';
-import AuthenticatedLayout from './Layouts/AuthenticatedLayout.vue';
-import Guest from './Layouts/Guest.vue';
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import Guest from '@/Layouts/Guest.vue';
 
 // Import your additional components
 import Posts from '../components/Posts.vue';
